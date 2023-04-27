@@ -63,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'jewerlyshop.wsgi.app'
+WSGI_APPLICATION = 'jewelryshop.wsgi.application'
 
 
 # Database
