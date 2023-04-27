@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-3%y3laftm62q0zaj+s7#p-xqq9(&#q+)s8)p-&#&bz*0$!xu$0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -63,10 +63,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'jewelryshop.wsgi.application'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-STATICFILES_STORAGE='whitenoise.django.GzipManifestStaticFilesStorage'
+WSGI_APPLICATION = 'jewerlyshop.wsgi.app'
+
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
